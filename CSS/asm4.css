@@ -30,13 +30,30 @@ p{
     float: left;
     width: 100%;
 }   
-.container{
+.header{
     float: none;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
    
 }   
+.container {
+      display: flex;            /* chia 2 cột */
+      max-width: 1200px;         /* giới hạn chiều rộng CV */
+      margin: 0 auto;           /* căn giữa trang */
+      border: 1px solid #ccc;   /* khung ngoài */
+    }
+.left{
+    float: left;
+    width: 50%;               /* cột trái */
+    background: #035ef1;      
+    padding: 20px;
+    text-align:center;
+    color: #eaeaea;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
 .nav{
     background-color: #008000ce;
 }
@@ -57,4 +74,30 @@ p{
 }
 .nav ul li.right{
     float: right;
+}
+
+.left button{
+    background: #035ef1;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.right {
+  display: flex;
+  flex-wrap: wrap; /* cho phép xuống dòng */
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.rightdiv {
+  flex: 1 1 calc(50% - 20px); /* chiếm 50% chiều rộng trừ gap */
+  background: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
 }
